@@ -14,6 +14,7 @@ import (
 	"time"
 	
 	"github.com/ilovelili/minos-bitcoin/wire"
+	"github.com/ilovelili/minos-bitcoin/chaincfg/chainhash"
 	"github.com/davecgh/go-spew/spew"
 )
 
@@ -66,7 +67,7 @@ var (
 	// nodeCount is the total number of peer connections made since startup
 	// and is used to assign an id to a peer.
 	nodeCount int32
-
+	
 	// zeroHash is the zero value hash (all zeros).  It is defined as a
 	// convenience.
 	zeroHash chainhash.Hash
